@@ -1,10 +1,10 @@
 # SEUTechEvent_lab3
-# SEU TechXplore 2026 — Event Registration & Simple Interaction
+# SEU TechEvent 2026 — Event Registration & Simple Interaction
 
 
 📌 Project Overview
 
-This repository builds upon previous lab iterations by introducing core JavaScript concepts to the **SEU TechXplore 2026** registration page. By using DOM manipulation and simple conditional logic, users can perform real-time checks and receive immediate feedback without reloading the webpage.
+This repository builds upon previous lab iterations by introducing core JavaScript concepts to the **SEU TechEvent 2026** registration page. By using DOM manipulation and simple conditional logic, users can perform real-time checks and receive immediate feedback without reloading the webpage.
 
 ### ✨ Key Features & Interactions
 * **Check Registration Status:** Updates the event status in real time to indicate active registration.
