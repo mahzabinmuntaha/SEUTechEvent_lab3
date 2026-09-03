@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEU Tech Event Information and Registration Page</title>
+    <link rel="icon" type="image/png" href="assets/images/seu-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img src="assets/images/seu-logo.png" alt="Southeast University official seal with a lit candle, book, and the motto Oh My Lord, Increase Me in Knowledge">
+                <div class="brand-text">
+                    <div class="eyebrow">Southeast University</div>
+                    <strong>SEU Tech Event</strong>
+                </div>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <h1>SEU Tech Event Information and Registration Page</h1>
+                    <p class="lead">
+                        A one-day technology showcase organised by the Department of Computer Science
+                        and Engineering, Southeast University. Join us for talks, hands-on workshops,
+                        and a project showcase built by students, for students.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#register" class="btn btn-primary">Register now</a>
+                        <a href="#about" class="btn btn-ghost">Learn more</a>
+                    </div>
+                </div>
+                <div class="hero-logo-card">
+                    <img src="assets/images/seu-logo.png" alt="Southeast University logo featuring a burning candle, a blue mug, and a green S-shaped book on a yellow circular seal">
+                    <div class="motto">"Oh My Lord, Increase Me in Knowledge"</div>
+                </div>
+            </div>
+            <div class="wrap stats-bar">
+                <div class="stat"><div class="num">200</div><div class="label">Total seats</div></div>
+                <div class="stat"><div class="num">6</div><div class="label">Sessions</div></div>
+                <div class="stat"><div class="num">2</div><div class="label">Workshop tracks</div></div>
+                <div class="stat"><div class="num" id="statRegistered">0</div><div class="label">Registered so far</div></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrap">
+                <div class="kicker">About the event</div>
+                <h2>What is the SEU Tech Event?</h2>
+                <p>
+                    The SEU Tech Event is an annual gathering hosted by the Department of Computer
+                    Science and Engineering at Southeast University. It brings together students,
+                    faculty members, and industry professionals to share knowledge on modern software
+                    development, artificial intelligence, and web technologies. The event is designed
+                    to give students practical exposure beyond the classroom, through live demonstrations
+                    and direct interaction with working engineers.
+                </p>
+                <p>
+                    Our goal is simple: help students turn coursework into real, usable skills. Every
+                    session is built around a concrete outcome, whether that is deploying a first web
+                    application, understanding how a database scales, or learning how a hiring manager
+                    reads a portfolio. <span style="color: var(--pink);">Attendance is free for all SEU students</span>,
+                    and seats are limited, so early registration is encouraged.
+                </p>
+
+                <div class="two-col">
+                    <div class="card">
+                        <h3>Goals of the event</h3>
+                        <ul>
+                            <li>Introduce students to current industry practices in software engineering</li>
+                            <li>Provide hands-on workshop time with real tools, not just slides</li>
+                            <li>Create a space for students to showcase their own class and personal projects</li>
+                            <li>Connect students with alumni and industry mentors for career guidance</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Who can participate</h3>
+                        <ol>
+                            <li>Undergraduate students of the Department of CSE</li>
+                            <li>Postgraduate students pursuing an MSc in CSE</li>
+                            <li>Students from other departments with an interest in technology</li>
+                            <li>Faculty members and invited guests
+                                <ol>
+                                    <li>Session speakers and panel moderators</li>
+                                    <li>Workshop facilitators from partner companies</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="pill-row">
+                    <div class="pill"><span class="dot"></span>Free entry for SEU students</div>
+                    <div class="pill"><span class="dot"></span>Certificates provided</div>
+                    <div class="pill"><span class="dot"></span>Limited seats: 200</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <div class="wrap">
+                <div class="kicker">Programme</div>
+                <h2>Event schedule</h2>
+                <p>
+                    The event runs across a single day in the SEU Auditorium and adjoining lab
+                    rooms. The table below lists the main sessions in order.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Session</th>
+                            <th scope="col">Speaker / Facilitator</th>
+                            <th scope="col">Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM</td>
+                            <td>Registration &amp; welcome breakfast</td>
+                            <td>Event Committee</td>
+                            <td>Main Lobby</td>
+                        </tr>
+                        <tr>
+                            <td>9:30 AM</td>
+                            <td>Opening keynote: The Future of Web Development</td>
+                            <td>Dr. Farhana Alam</td>
+                            <td>Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 AM</td>
+                            <td>Workshop: Building Your First Full-Stack App</td>
+                            <td>Mr. Abid Ahmad</td>
+                            <td>Lab 613</td>
+                        </tr>
+                        <tr>
+                            <td>12:30 PM</td>
+                            <td>Lunch break</td>
+                            <td>&mdash;</td>
+                            <td>Cafeteria</td>
+                        </tr>
+                        <tr>
+                            <td>1:30 PM</td>
+                            <td>Panel: Careers in Software Engineering</td>
+                            <td>Industry Alumni Panel</td>
+                            <td>Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>3:00 PM</td>
+                            <td>Student project showcase &amp; closing</td>
+                            <td>All Participants</td>
+                            <td>Main Lobby</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="tracks">
+            <div class="wrap">
+                <div class="kicker">Workshops</div>
+                <h2>Workshop tracks</h2>
+                <p>
+                    Pick one workshop track during registration. Each track runs for two hours and
+                    includes a take-home project template.
+                </p>
+                <div class="two-col">
+                    <div class="card">
+                        <h3>Web &amp; App Development</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 10px;">
+                            Build and deploy a small project using modern front-end tools.
+                        </p>
+                        <ul>
+                            <li>HTML, CSS and JavaScript fundamentals refresher</li>
+                            <li>Connecting a front end to a simple API</li>
+                            <li>Deploying a static site for free</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>AI &amp; Data</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 10px;">
+                            An introduction to practical machine learning workflows.
+                        </p>
+                        <ul>
+                            <li>Preparing and cleaning a dataset</li>
+                            <li>Training a basic image classification model</li>
+                            <li>Evaluating results and avoiding overfitting</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="margin-top: 16px;">
+                    For more background on the department, visit the
+                    <a href="https://www.seu.edu.bd/" target="_blank" rel="noopener noreferrer">Southeast University official website</a>.
+                </p>
+
+                <h3 style="margin-top: 32px; margin-bottom: 12px; font-size: 20px; color: #fff;">Frequently asked questions</h3>
+                <details class="faq">
+                    <summary>Is the event really free for SEU students?</summary>
+                    <p>Yes. Entry, session materials, and a certificate of participation are free for all currently enrolled SEU students.</p>
+                </details>
+                <details class="faq">
+                    <summary>Can I attend more than one workshop track?</summary>
+                    <p>Registration reserves one track per person so we can plan seating and materials, but you are welcome to sit in on a second track if seats remain available on the day.</p>
+                </details>
+                <details class="faq">
+                    <summary>What should I bring?</summary>
+                    <p>Bring your student ID card and a laptop if you plan to follow along with the hands-on workshops.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="quick-info-section">
+            <div class="wrap">
+                <div class="kicker">Try it out</div>
+                <h2>Quick Event Info</h2>
+                <p>Small interactive checks powered by external JavaScript (js/script.js).</p>
+
+                <div class="quick-info">
+                    <div class="quick-info-grid">
+                        <div class="quick-info-item">
+                            <button type="button" class="btn btn-primary btn-small" onclick="checkRegistrationStatus()">Check Registration Status</button>
+                            <p class="result" id="registrationStatus"></p>
+                        </div>
+                        <div class="quick-info-item">
+                            <button type="button" class="btn btn-primary btn-small" onclick="checkSeatAvailability()">Check Seat Availability</button>
+                            <p class="result" id="seatAvailability"></p>
+                        </div>
+                        <div class="quick-info-item">
+                            <button type="button" class="btn btn-primary btn-small" onclick="showGreeting()">Show Greeting</button>
+                            <p class="result" id="greetingMessage"></p>
+                        </div>
+                        <div class="quick-info-item">
+                            <button type="button" class="btn btn-ghost btn-small" onclick="showVenue()">Show Event Venue</button>
+                            <p class="result" id="venueInfo"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="wrap">
+                <div class="kicker">Last step</div>
+                <h2>Registration form</h2>
+                <p>Fill in the form below to reserve your seat. Fields marked required must be completed. The Full Name field below also powers the "Show Greeting" check above.</p>
+
+                <form class="form-card" id="regForm" action="#" method="post">
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="studentName">Full name</label>
+                            <input type="text" id="studentName" name="studentName" placeholder="e.g. Ayesha Rahman" required>
+                        </div>
+                        <div class="field">
+                            <label for="studentId">Student ID</label>
+                            <input type="text" id="studentId" name="studentId" placeholder="e.g. 2021000001" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="you@seu.edu.bd" required>
+                        </div>
+                        <div class="field">
+                            <label for="prefDate">Preferred date</label>
+                            <input type="date" id="prefDate" name="prefDate" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field full">
+                            <fieldset>
+                                <legend>Session slot</legend>
+                                <div class="option-row">
+                                    <label><input type="radio" name="slot" value="morning" checked> Morning session</label>
+                                    <label><input type="radio" name="slot" value="afternoon"> Afternoon session</label>
+                                    <label><input type="radio" name="slot" value="full-day"> Full-day pass</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="field full">
+                            <fieldset>
+                                <legend>Add-ons</legend>
+                                <div class="option-row">
+                                    <label><input type="checkbox" name="addon" value="lunch"> Lunch package</label>
+                                    <label><input type="checkbox" name="addon" value="certificate"> Printed certificate</label>
+                                    <label><input type="checkbox" name="addon" value="tshirt"> Event t-shirt</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Submit registration</button>
+                        <span class="form-msg" id="regMsg"></span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="admin">
+            <div class="wrap">
+                <div class="kicker">Organisers only</div>
+                <h2>Admin panel</h2>
+                <p>Committee members can log in below to see how many students have registered.</p>
+
+                <form class="form-card admin-login-card" id="adminLoginForm">
+                    <div class="field full" style="margin-bottom: 16px;">
+                        <label for="adminEmail">Admin email</label>
+                        <input type="email" id="adminEmail" name="adminEmail" placeholder="admin@seu.edu.bd" required>
+                    </div>
+                    <div class="field full" style="margin-bottom: 16px;">
+                        <label for="adminPassword">Password</label>
+                        <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Log in</button>
+                        <span class="form-msg" id="adminMsg"></span>
+                    </div>
+                </form>
+
+                <div class="admin-dashboard hidden" id="adminDashboard">
+                    <div class="admin-toolbar">
+                        <div>Signed in as <strong id="adminEmailLabel"></strong> &middot; <span id="dashboardCount">0</span> registration(s)</div>
+                        <div style="display:flex; gap:10px;">
+                            <button type="button" class="btn btn-ghost" id="clearBtn">Clear all data</button>
+                            <button type="button" class="btn btn-ghost" id="logoutBtn">Log out</button>
+                        </div>
+                    </div>
+                    <div style="overflow-x:auto;">
+                        <table id="adminTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Full name</th>
+                                    <th scope="col">Student ID</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Preferred date</th>
+                                    <th scope="col">Slot</th>
+                                    <th scope="col">Add-ons</th>
+                                    <th scope="col">Submitted</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminTableBody"></tbody>
+                        </table>
+                    </div>
+                    <div class="empty-state hidden" id="adminEmptyState">No registrations yet. Once students submit the form above, they will appear here.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap footer-inner">
+            <div class="brand-mini">
+                <img src="assets/images/seu-logo.png" alt="Southeast University logo">
+                <p>&copy; 2026 Department of CSE, Southeast University. All rights reserved.</p>
+            </div>
+            <nav aria-label="Footer navigation">
+                <ul style="list-style:none; display:flex; gap:16px;">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
